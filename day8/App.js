@@ -9,7 +9,6 @@ type Props = {
 
 export default function App(props: Props) {
   let {state} = props;
-  console.log('here >>>', state.newItem);
   let {todoItems, newTodoItems} = state;
   let toggleDone = (id) => {
     let newTodoItems = state.todoItems.map((item) => {
